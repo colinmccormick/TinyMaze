@@ -136,7 +136,10 @@ class TinyMazeEnv():
 	def play(self):
 		self.display_maze()
 		while True:
-			move = raw_input()
+			if sys.version_info[0] < 3:
+				move = raw_input()
+			else:
+				move = input()
 			status = self.step(move)
 			if status == self.won: 
 				print("You won!")
