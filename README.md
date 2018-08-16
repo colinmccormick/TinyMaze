@@ -7,7 +7,7 @@ $ python TinyMaze.py <int maze_size>
 To use in reinforcement learning:
 
 ```python
-import TinyMaze.py
+import TinyMaze
 
 moves = ["a", "s", "w", "z"]
 game = TinyMaze.TinyMazeEnv(maze_size)
